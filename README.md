@@ -45,3 +45,8 @@ the RPM are then available in ~/rpmbuild/RPMS/noarch. Now you can review and ins
     $ rpmls ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm
     $ sudo rpm -ivp ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm
 More information on RPM building in [How to create an RPM package](https://fedoraproject.org/wiki/How_to_create_an_RPM_package).
+
+Source code and spec file
+-------------------------
+Source code of **kalendas** is available in [Launchpad](https://launchpad.net/kalendas)
+while the spec file is hosted in the repository [GitHub](https://github.com/mikemolina/kalendas-rpm).
