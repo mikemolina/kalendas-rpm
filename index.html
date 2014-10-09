@@ -2,80 +2,144 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>Kalendas RPM packages</title>
-	<link rel="stylesheet" href="stylesheets/styles.css">
-	  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	    <script src="javascripts/respond.js"></script>
-	    <!--[if lt IE 9]>
-	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-	    <!--[if lt IE 8]>
-	    <link rel="stylesheet" href="stylesheets/ie.css">
-	    <![endif]-->
-	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Kalendas RPM packages</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 8]>
+	<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Fuente: http://www.ugr.es/%7Eftorralbo/cuaderno-traduccion-css.html -->
+    <!-- Styleswitcher -->
+    <script type="text/javascript" src="javascripts/styleswitcher.js"></script>
+    <!-- Hojas de estilo para el cambio de idioma -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/en.css" title="en"/>
+    <link rel="alternate stylesheet" type="text/css" href="stylesheets/es.css" title="es"/>
+    <link rel="alternate stylesheet" type="text/css" href="stylesheets/pt_BR.css" title="pt_BR"/>
   </head>
   <body>
     <div id="header">
       <nav>
-	<li class="fork"><a href="https://github.com/mikemolina/kalendas">View On GitHub</a></li>
+	<li class="fork">
+	  <a href="https://github.com/mikemolina/kalendas">  
+	    <NOBR class="en">View on GitHub</NOBR>
+	    <NOBR class="es">Ver en GitHub</NOBR>
+	    <NOBR class="pt_BR">Ver em GitHub</NOBR>
+	  </a>
+	</li>
 	<li class="fork"><a href="https://github.com/mikemolina/kalendas-rpm">Repo</a></li>
 	<li class="downloads"><a href="http://mikemolina.github.io/kalendas-rpm/spec/kalendas.spec">SPEC</a></li>
-	<li class="downloads"><a href="https://launchpad.net/kalendas/trunk/1.0.2/+download/kalendas-1.0.2.tar.gz">SOURCE</a></li>
+	<li class="downloads">
+	  <a href="https://launchpad.net/kalendas/trunk/1.0.2/+download/kalendas-1.0.2.tar.gz">
+	    <NOBR class="en">SOURCE</NOBR>
+	    <NOBR class="es">FUENTE</NOBR>
+	    <NOBR class="pt_BR">FONTE</NOBR> 
+	  </a>
+	</li>
 	<li class="downloads"><a href="https://launchpad.net/kalendas/trunk/1.0.2/+download/kalendas-doc.pdf">DOC</a></li>
-	<li class="title">DOWNLOADS</li>
+	<li class="title">
+	  <p class="en">DOWNLOADS</p>
+	  <p class="es">DESCARGAS</p>
+	  <p class="pt_BR">BAIXAR</p>
+	</li>
       </nav>
     </div><!-- end header -->
     <div class="wrapper">
       <section>
         <div id="title">
-          <h1>kalendas - Calculations of Calendar and Julian Date</h1>
-          <p>Repository for Fedora and CentOS</p>
+          <h1 class="en">kalendas - Calculations of Calendar and Julian Date</h1>
+          <h1 class="es">kalendas - Cálculos d Calendario y Fecha Juliana</h1>
+          <h1 class="pt_BR">kalendas - Cálculos do Calendário e Data Juliana</h1>
+          <p class="en">Repository for Fedora and CentOS</p>
+          <p class="es">Repositorio para Fedora y CentOS</p>
+          <p class="pt_BR">Repositório para Fedora e CentOS</p>
           <hr>
+	  <form style="text-align:center;">
+	    <select onchange="setActiveStyleSheet(value);return false;">
+	      <option value="en">english</option>
+	      <option value="es">español</option>
+	      <option value="pt_BR">português</option>
+	    </select>
+	  </form>
         </div><!-- end title -->
 	<!-- Fedora -->
 	<h3><a name="sec-fedora" class="anchor" href="#sec-fedora"><span class="octicon octicon-link"></span></a>Fedora</h3>
-	<p><strong>kalendas</strong> packages are available in versions 19, 20 and 21. First install the repository for to setup yum, from the terminal run</p>
+	<p class="en"><strong>kalendas</strong> packages are available in versions 19, 20 and 21. First install the repository for to setup yum, from the terminal run</p>
+	<p class="es">Paquetes de <strong>kalendas</strong> están disponibles para versiones 19, 20 y 21. Primero instale el repositorio para configurar yum, desde la terminal ejecutar</p>
+	<p class="pt_BR">Pacotes de <strong>kalendas</strong> estão disponíveis para as versões 19, 20 e 21. Primeiro instale o repositório para configurar yum, em uma terminal executar</p>
 	<pre><code>$ sudo yum install http://mikemolina.github.com/kalendas-rpm/kalendas-fedora-release-1.0-1.noarch.rpm</code></pre>
-	<p>you will now be able to install the RPM package</p>
+	<p class="en">you will now be able to install the RPM package</p>
+	<p class="es">ahora usted está habilitado para instalar el paquete RPM</p>
+	<p class="pt_BR">agora você vai ser capaz de instalar o pacote RPM</p>
 	<pre><code>$ sudo yum install kalendas</code></pre>
 	<!-- end Fedora -->
 	<!-- CentOS -->
 	<h3><a name="sec-centos" class="anchor"	href="#sec-centos"><span class="octicon	octicon-link"></span></a>CentOS</h3>
-	<p><strong>kalendas</strong> is available for version 7. First install the repository for to setup yum, from the terminal run</p>
+	<p class="en"><strong>kalendas</strong> is available for version 7. First install the repository for to setup yum, from the terminal run</p>
+	<p class="es"><strong>kalendas</strong> está disponible para la versión 7. Primero instale el repositorio para configurar yum, desde la terminal ejecutar</p>
+	<p class="pt_BR"><strong>kalendas</strong> está disponível para a versão 7. Primeiro instale o repositório para configurar yum, em uma terminal executar</p>
 	<pre><code>$ sudo yum install http://mikemolina.github.com/kalendas-rpm/kalendas-centos-release-1.0-1.noarch.rpm</code></pre>
-	<p>install the RPM package by running</p>
+	<p class="en">install the RPM package by running</p>
+	<p class="es">instalar el paquete RPM ejecutando</p>
+	<p class="pt_BR">instalar o pacote RPM, executando</p>
 	<pre><code>$ sudo yum install kalendas</code></pre>
 	<!-- end CentOS -->
 	<!-- Building from the SRPM -->
-	<h3><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Building from the SRPM</h3>
-	<p>Need to install basic development tools</p>
+	<h3 class="en"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Building from the SRPM</h3>
+	<h3 class="es"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Compilando desde el SRPM</h3>
+	<h3 class="pt_BR"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Compilação a partir do SRPM</h3>
+	<p class="en">Need to install basic development tools</p>
+	<p class="es">Necesita instalar los paquetes básicos de compilación</p>
+	<p class="pt_BR">Instale os pacotes necessários para compilação</p>
 	<pre><code>$ sudo yum install @development-tools
 $ sudo yum install fedora-packager yum-utils</code></pre>
-	<p>create the directory tree construction</p>
+	<p class="en">create the directory tree building</p>
+	<p class="es">crear los directorios compilación</p>
+	<p class="pt_BR">criar o pasta de compilação</p>
 	<pre><code>$ rpmdev-setuptree</code></pre>
-	<p>download and install the SRPM package in ~/rpmbuild</p>
+	<p class="en">download and install the SRPM package in ~/rpmbuild</p>
+	<p class="es">descargar e instalar el paquete SRPM en ~/rpmbuild</p>
+	<p class="pt_BR">baixar e instalar o pacote SRPM em ~/rpmbuild</p>
 	<pre><code>$ yumdownloader --source kalendas
 $ rpm -ivh kalendas-*.src.rpm</code></pre>
-	<p>Next, build the rpm package</p>
+	<p class="en">Next, build the RPM package</p>
+	<p class="es">En seguida, compilar el paquete RPM</p>
+	<p class="pt_BR">Em seguida, compilar o pacote RPM</p>
 	<pre><code>$ rpmbuild -bb ~/rpmbuild/SPECS/kalendas.spec</code></pre>
-	<p>the RPM are then available in ~/rpmbuild/RPMS/noarch. Now you can review and install</p>
+	<p class="en">the RPM are then available in ~/rpmbuild/RPMS/noarch. Now you can review and install</p>
+	<p class="es">el RPM estara disponible en ~/rpmbuild/RPMS/noarch. Ahora puede revisarlo e instalarlo</p>
+	<p class="pt_BR">o pacote RPM estará disponível em ~/rpmbuild/RPMS/noarch. Instale e teste o seu pacote</p>
 	<pre><code>$ rpmls ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm
 $ sudo rpm -ivp ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm</code></pre>
-	<p>More information on RPM building in <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
-	<!-- end Building from the SRPM -->	
+	<p class="en">More information on RPM building in <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
+	<p class="es">Más información sobre la compilación de un RPM en <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
+	<p class="pt_BR">Mais informações sobre a compilação de pacotes RPM em <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
+	<!-- end Building from the SRPM -->
 	<!-- Source code and spec file -->
-	<h3><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Source code and spec file</h3>
-	<p>Source code of <strong>kalendas</strong> is available in <a href="https://launchpad.net/kalendas">Launchpad</a> while the spec file is hosted in the repository <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
+	<h3 class="en"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Source code and spec file</h3>
+	<h3 class="es"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código fuente y archivo spec</h3>
+	<h3 class="pt_BR"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código-fonte e arquivo spec</h3>
+	<p class="en">Source code of <strong>kalendas</strong> is available in <a href="https://launchpad.net/kalendas">Launchpad</a> while the spec file is hosted in the repository <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
+	<p class="es">Código fuente de <strong>kalendas</strong> está disponible en <a href="https://launchpad.net/kalendas">Launchpad</a> mientras que el archivo spec está alojado en el repositorio <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
+	<p class="pt_BR">Código-fonte do <strong>kalendas</strong> estão disponíveis em <a href="https://launchpad.net/kalendas">Launchpad</a> enquanto o arquivo spec está hospedado no repositório <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
 	<!-- end Source code and spec file -->
       </section><!-- end section -->
     </div><!-- end wrapper -->
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <div id="footer">
       <hr>
-	<span class="credits left">Maintained by <a href="https://github.com/mikemolina">mikemolina</a></span>
-	<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+      <span class="credits left">
+	<NOBR class="en">Maintained by <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
+	<NOBR class="es">Gestionado por <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
+	<NOBR class="pt_BR">Gerenciado por <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
+      </span>
+      <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
     </div><!-- end footer -->    
   </body>
 </html>
