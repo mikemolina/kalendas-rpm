@@ -22,6 +22,12 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/en.css" title="en"/>
     <link rel="alternate stylesheet" type="text/css" href="stylesheets/es.css" title="es"/>
     <link rel="alternate stylesheet" type="text/css" href="stylesheets/pt_BR.css" title="pt_BR"/>
+    <style type="text/css">
+      .abstract { text-align: justify; width: 80%; margin-left: 10%; margin-right: 10%; }
+    </style>
+    <style type="text/css">
+      .abstractitle { text-align: center; }
+    </style>
   </head>
   <body>
     <div id="header">
@@ -61,6 +67,7 @@
           <p class="pt_BR">Repositório para Fedora e CentOS</p>
           <hr>
 	  <form style="text-align:center;">
+	    <img src="images/worldlogo.png" align="absmiddle">
 	    <select onchange="setActiveStyleSheet(value);return false;">
 	      <option value="en">english</option>
 	      <option value="es">español</option>
@@ -68,6 +75,18 @@
 	    </select>
 	  </form>
         </div><!-- end title -->
+	<!-- Resumen -->
+	<div class="abstractitle">
+	  <h2 class="en"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">What is?</font></h2>
+	  <h2 class="es"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">Qué es?</font></h2>
+	  <h2 class="pt_BR"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">O que é?</font></h2>
+	</div>
+	<div class="abstract">
+	  <p class="en"><strong>kalendas</strong> is a perl script to make calendar calculations. The computations are developed on three systems of dating: the Julian calendar, the Gregorian calendar and the system of numbering of Julian day/date.</p>
+	  <p class="es"><strong>kalendas</strong> es un perl script para realizar cálculos de calendario. Los cómputos están desarrollados sobre tres sistemas de datación: el calendario Juliano, el calendario Gregoriano y el sistema de numeración de día/fecha Juliana.</p>
+	  <p class="pt_BR"><strong>kalendas</strong> é um perl script para realizar cálculos de calendário. Os cómputos estão desenvolvidos sobre três sistemas de datación: o calendário Juliano, o calendário Gregoriano e o sistema de numeración de dia/data Juliana.</p>
+	</div><!-- end abstract -->
+	<!-- end Resumen -->
 	<!-- Fedora -->
 	<h3><a name="sec-fedora" class="anchor" href="#sec-fedora"><span class="octicon octicon-link"></span></a>Fedora</h3>
 	<p class="en"><strong>kalendas</strong> packages are available in versions 19, 20 and 21. First install the repository for to setup yum, from the terminal run</p>
