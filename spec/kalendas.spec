@@ -1,11 +1,13 @@
 Name:           kalendas
-Version:        1.0.1
+Version:        1.0.2
 Release:        1%{?dist}
 Summary:        Calculations of Calendar and Julian Date
+Summary(es):    Cálculos de Calendario y Fecha Juliana
+Summary(pt_BR): Cálculos do Calendário e Data Juliana
 Group:          Applications/Engineering
 
 License:        GPLv3+
-URL:            https://github.com/mikemolina/kalendas
+URL:            http://mikemolina.github.com/kalendas-rpm
 Source:         https://launchpad.net/kalendas/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 
 Requires(post): info
@@ -15,16 +17,28 @@ Requires:       perl-libintl >= 1.20
 BuildArch:      noarch
 
 %description
-kalendas is a Perl script to make calendar calculations. The
+kalendas is a Perl Script to make calendar calculations. The
 computations are developed on three systems of dating: the Julian
 calendar, the Gregorian calendar and the system of numbering of
 Julian day/date.
+
+%description -l es
+kalendas es un Perl Script para realizar cálculos de calendario.
+Los cómputos están desarrollados sobre tres sistemas de datación:
+el calendario Juliano, el calendario Gregoriano y el sistema de
+numeración de día/fecha Juliana.
+
+%description -l pt_BR
+kalendas é um Perl Script para realizar cálculos de calendário.
+Os cômputos estão desenvolvidos sobre três sistemas de datação:
+o calendário Juliano, o calendário Gregoriano e o sistema de
+numeração de dia/data Juliana.
 
 %prep
 %setup -q
 
 # Conversion de codificacion latin1 a utf8, preservando tiempo original
-for file in LEAME LICENCIA DEPENDENCIES; do
+for file in LICENCIA DEPENDENCIES; do
    iconv -f ISO-8859-1 -t UTF-8 -o $file.new $file && \
    touch -r $file $file.new && \
    mv $file.new $file
@@ -51,7 +65,7 @@ if [ $1 = 0 ] ; then
 fi
 
 %files -f %{name}.lang
-%doc README.md LEAME NEWS ChangeLog AUTHORS COPYING LICENCIA DEPENDENCIES
+%doc README.md LEAME.md NEWS ChangeLog AUTHORS COPYING LICENCIA DEPENDENCIES
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_infodir}/*
@@ -60,6 +74,10 @@ fi
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Sat Oct 11 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.2-1
+- Package updated to version 1.0.2.
+- New direction web for distros based in RPM.
+- Spanish, portuguese translations in spec file fields.
 * Sun Sep 28 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.1-1
 - Initial packaging.
 - Adjusted the package according to packaging guidelines.
