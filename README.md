@@ -5,7 +5,7 @@ This website contains the repository of **kalendas**  for distros Linux based in
 
 Fedora
 ------
-**kalendas** packages are available in versions 19, 20 and 21. First install the repository for to setup yum,
+**kalendas** packages are available in versions 19, 20, 21 and 22. First install the repository for to setup yum,
 from the terminal run
 
     $ sudo yum install http://mikemolina.github.com/kalendas-rpm/kalendas-fedora-release-1.0-1.noarch.rpm
