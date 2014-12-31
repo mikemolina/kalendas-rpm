@@ -1,5 +1,5 @@
 Name:           kalendas
-Version:        1.0.2
+Version:        1.1.0
 Release:        1%{?dist}
 Summary:        Calculations of Calendar and Julian Date
 Summary(es):    Cálculos de Calendario y Fecha Juliana
@@ -74,10 +74,13 @@ fi
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sat Oct 11 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.2-1
+* Tue Dec 30 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.1.0-1.centos
+- Package updated to version 1.1.0.
+- Packaging for fedora 22.
+* Sat Oct 11 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.2-1.centos
 - Package updated to version 1.0.2.
 - New direction web for distros based in RPM.
 - Spanish, portuguese translations in spec file fields.
-* Sun Sep 28 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.1-1
+* Sun Sep 28 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.1-1.centos
 - Initial packaging.
 - Adjusted the package according to packaging guidelines.
