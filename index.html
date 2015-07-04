@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Kalendas RPM packages</title>
+    <title>Kalendas home</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -33,14 +33,19 @@
     <div id="header">
       <nav>
 	<li class="fork">
-	  <a href="https://github.com/mikemolina/kalendas">  
+	  <a href="https://github.com/mikemolina/kalendas">
 	    <NOBR class="en">View on GitHub</NOBR>
 	    <NOBR class="es">Ver en GitHub</NOBR>
 	    <NOBR class="pt_BR">Ver em GitHub</NOBR>
 	  </a>
 	</li>
-	<li class="fork"><a href="https://github.com/mikemolina/kalendas-rpm">Repo</a></li>
-	<li class="downloads"><a href="http://mikemolina.github.io/kalendas-rpm/spec/kalendas.spec">SPEC</a></li>
+	<li class="fork">
+	  <a href="https://launchpad.net/kalendas">
+	    <NOBR class="en">View on Launchpad</NOBR>
+	    <NOBR class="es">Ver en Launchpad</NOBR>
+	    <NOBR class="pt_BR">Ver em Launchpad</NOBR>
+	  </a>
+	</li>
 	<li class="downloads">
 	  <a href="https://launchpad.net/kalendas/trunk/1.1.0/+download/kalendas-1.1.0.tar.gz">
 	    <NOBR class="en">SOURCE</NOBR>
@@ -62,12 +67,9 @@
           <h1 class="en">kalendas - Calculations of Calendar and Julian Date</h1>
           <h1 class="es">kalendas - Cálculos de Calendario y Fecha Juliana</h1>
           <h1 class="pt_BR">kalendas - Cálculos do Calendário e Data Juliana</h1>
-          <p class="en">Repository for Fedora and CentOS</p>
-          <p class="es">Repositorio para Fedora y CentOS</p>
-          <p class="pt_BR">Repositório para Fedora e CentOS</p>
           <hr>
 	  <form style="text-align:center;">
-	    <img src="images/worldlogo.png" align="absmiddle">
+	    <img src="images/worldlogo.png" align="absmiddle" alt=""/>
 	    <select onchange="setActiveStyleSheet(value);return false;">
 	      <option value="en">english</option>
 	      <option value="es">español</option>
@@ -75,12 +77,15 @@
 	    </select>
 	  </form>
         </div><!-- end title -->
+	<div align="center">
+	  <img src="https://github.com/mikemolina/kalendas/wiki/images/term_movie.gif" alt=""/><br/><br/>
+	</div>
 	<!-- Resumen -->
 	<div class="abstractitle">
-	  <h2 class="en"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">What is?</font></h2>
-	  <h2 class="es"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">Qué es?</font></h2>
-	  <h2 class="pt_BR"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">O que é?</font></h2>
-	</div>
+	  <h2 class="en"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">What is?</font></h2>
+	  <h2 class="es"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">Qué es?</font></h2>
+	  <h2 class="pt_BR"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">O que é?</font></h2>
+	</div><!-- end abstractitle -->
 	<div class="abstract">
 	  <p class="en"><strong>kalendas</strong> is a perl script to make calendar calculations. The computations are developed on three systems of dating: the Julian calendar, the Gregorian calendar and the system of numbering of Julian day/date.</p>
 	  <p class="es"><strong>kalendas</strong> es un perl script para realizar cálculos de calendario. Los cómputos están desarrollados sobre tres sistemas de datación: el calendario Juliano, el calendario Gregoriano y el sistema de numeración de día/fecha Juliana.</p>
@@ -89,9 +94,10 @@
 	<!-- end Resumen -->
 	<!-- Nuevo -->
 	<div class="abstractitle">
-	  <h2 class="en"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">¡New!</font></h2>
-	  <h2 class="es"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">¡Nuevo!</font></h2>
-	  <h2 class="pt_BR"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">¡Novo!</font></h2>
+	  <h2 class="en"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D
+">¡New!</font></h2>
+	  <h2 class="es"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">¡Nuevo!</font></h2>
+	  <h2 class="pt_BR"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a><font color="#74B80D">¡Novo!</font></h2>
 	</div>
 	<div class="abstract">
 	  <ul class="en">
@@ -110,77 +116,100 @@
 	    <li>Documentação sobre a data Juliana modificada.</li>
 	  </ul>
 	</div><!-- end abstract -->
-	<!-- end Nuevo -->	
-	<!-- Fedora -->
-	<h3><a name="sec-fedora" class="anchor" href="#sec-fedora"><span class="octicon octicon-link"></span></a>Fedora</h3>
-	<p class="en"><strong>kalendas</strong> packages are available in versions 19, 20, 21 and 22. First install the repository for to setup yum, from the terminal run</p>
-	<p class="es">Paquetes de <strong>kalendas</strong> están disponibles para versiones 19, 20, 21 y 22. Primero instale el repositorio para configurar yum, desde la terminal ejecutar</p>
-	<p class="pt_BR">Pacotes de <strong>kalendas</strong> estão disponíveis para as versões 19, 20, 21 e 22. Primeiro instale o repositório para configurar yum, em uma terminal executar</p>
-	<pre><code>$ sudo yum install http://mikemolina.github.com/kalendas-rpm/kalendas-fedora-release-1.0-1.noarch.rpm</code></pre>
-	<p class="en">you will now be able to install the RPM package</p>
-	<p class="es">ahora usted está habilitado para instalar el paquete RPM</p>
-	<p class="pt_BR">agora você vai ser capaz de instalar o pacote RPM</p>
-	<pre><code>$ sudo yum install kalendas</code></pre>
-	<!-- end Fedora -->
-	<!-- CentOS -->
-	<h3><a name="sec-centos" class="anchor"	href="#sec-centos"><span class="octicon	octicon-link"></span></a>CentOS</h3>
-	<p class="en"><strong>kalendas</strong> is available for version 7. First install the repository for to setup yum, from the terminal run</p>
-	<p class="es"><strong>kalendas</strong> está disponible para la versión 7. Primero instale el repositorio para configurar yum, desde la terminal ejecutar</p>
-	<p class="pt_BR"><strong>kalendas</strong> está disponível para a versão 7. Primeiro instale o repositório para configurar yum, em uma terminal executar</p>
-	<pre><code>$ sudo yum install http://mikemolina.github.com/kalendas-rpm/kalendas-centos-release-1.0-1.noarch.rpm</code></pre>
-	<p class="en">install the RPM package by running</p>
-	<p class="es">instalar el paquete RPM ejecutando</p>
-	<p class="pt_BR">instalar o pacote RPM, executando</p>
-	<pre><code>$ sudo yum install kalendas</code></pre>
-	<!-- end CentOS -->
-	<!-- Building from the SRPM -->
-	<h3 class="en"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Building from the SRPM</h3>
-	<h3 class="es"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Compilando desde el SRPM</h3>
-	<h3 class="pt_BR"><a name="sec-building-srpm" class="anchor" href="#sec-building-srpm"><span class="octicon octicon-link"></span></a>Compilação a partir do SRPM</h3>
-	<p class="en">Need to install basic development tools</p>
-	<p class="es">Necesita instalar los paquetes básicos de compilación</p>
-	<p class="pt_BR">Instale os pacotes necessários para compilação</p>
-	<pre><code>$ sudo yum install @development-tools
-$ sudo yum install fedora-packager yum-utils</code></pre>
-	<p class="en">create the directory tree building</p>
-	<p class="es">crear los directorios compilación</p>
-	<p class="pt_BR">criar o pasta de compilação</p>
-	<pre><code>$ rpmdev-setuptree</code></pre>
-	<p class="en">download and install the SRPM package in ~/rpmbuild</p>
-	<p class="es">descargar e instalar el paquete SRPM en ~/rpmbuild</p>
-	<p class="pt_BR">baixar e instalar o pacote SRPM em ~/rpmbuild</p>
-	<pre><code>$ yumdownloader --source kalendas
-$ rpm -ivh kalendas-*.src.rpm</code></pre>
-	<p class="en">Next, build the RPM package</p>
-	<p class="es">En seguida, compilar el paquete RPM</p>
-	<p class="pt_BR">Em seguida, compilar o pacote RPM</p>
-	<pre><code>$ rpmbuild -bb ~/rpmbuild/SPECS/kalendas.spec</code></pre>
-	<p class="en">the RPM are then available in ~/rpmbuild/RPMS/noarch. Now you can review and install</p>
-	<p class="es">el RPM estará disponible en ~/rpmbuild/RPMS/noarch. Ahora puede revisarlo e instalarlo</p>
-	<p class="pt_BR">o pacote RPM estará disponível em ~/rpmbuild/RPMS/noarch. Instale e teste o seu pacote</p>
-	<pre><code>$ rpmls ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm
-$ sudo rpm -ivp ~/rpmbuild/RPMS/noarch/kalendas-*.noarch.rpm</code></pre>
-	<p class="en">More information on RPM building in <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
-	<p class="es">Más información sobre la compilación de un RPM en <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
-	<p class="pt_BR">Mais informações sobre a compilação de pacotes RPM em <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a>.</p>
-	<!-- end Building from the SRPM -->
-	<!-- Source code and spec file -->
-	<h3 class="en"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Source code and spec file</h3>
-	<h3 class="es"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código fuente y archivo spec</h3>
-	<h3 class="pt_BR"><a name="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código-fonte e arquivo spec</h3>
-	<p class="en">Source code of <strong>kalendas</strong> is available in <a href="https://launchpad.net/kalendas">Launchpad</a> while the spec file is hosted in the repository <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
-	<p class="es">Código fuente de <strong>kalendas</strong> está disponible en <a href="https://launchpad.net/kalendas">Launchpad</a> mientras que el archivo spec está alojado en el repositorio <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
-	<p class="pt_BR">Código-fonte do <strong>kalendas</strong> estão disponíveis em <a href="https://launchpad.net/kalendas">Launchpad</a> enquanto o arquivo spec está hospedado no repositório <a href="https://github.com/mikemolina/kalendas-rpm">GitHub</a>.</p>
-	<!-- end Source code and spec file -->
+	<!-- end Nuevo -->
+	<!-- Uso -->
+	<h2 class="en"><a id="sec-use" class="anchor" href="#sec-use"><span class="octicon octicon-link"></span></a><font color="#74B80D">Using Kalendas</font></h2>
+	<h2 class="es"><a id="sec-use" class="anchor" href="#sec-use"><span class="octicon octicon-link"></span></a><font color="#74B80D">Usando Kalendas</font></h2>
+	<h2 class="pt_BR"><a id="sec-use" class="anchor" href="#sec-use"><span class="octicon octicon-link"></span></a><font color="#74B80D">Usando Kalendas</font></h2>
+	<p class="en">Run the perl script</p>
+	<p class="es">Ejecutar el perl script</p>
+	<p class="pt_BR">Executar o perl script</p>
+	<pre><code>$ kalendas</code></pre>
+	<p class="en">A brief functions list is shown running</p>
+	<p class="es">Un breve listado de funciones es mostrado ejecutando</p>
+	<p class="pt_BR">Uma breve lista de funções é mostrada em execução</p>
+	<pre><code>$ kalendas -h</code></pre>
+	<p class="en">can extend the information through man page with</p>
+	<p class="es">puede ampliar la información a través de la página manual con</p>
+	<p class="pt_BR">pode estender a informação através da página man</p>
+	<pre><code>$ man kalendas</code></pre>
+	<p class="en">For more detailed information of functions and instructions run <em>info kalendas</em> or see the documentation online.</p>
+	<p class="es">Para información más detallada de funciones e instrucciones ejecutar <em>info kalendas</em> o ver la documentación en línea.</p>
+	<p class="pt_BR">Para informações mais detalhadas funções e instruções executar <em>info kalendas</em> ou consulte a documentação on-line.</p>
+	<!-- end Uso -->
+	<!-- Descargas -->
+	<!-- Paquetes binarios -->
+	<h2 class="en"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">Download</font></h2>
+	<h2 class="es"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">Descargas</font></h2>
+	<h2 class="pt_BR"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">Baixar</font></h2>
+	<h3 class="en"><a id="sec-bin" class="anchor" href="#sec-bin"><span class="octicon octicon-link"></span></a>Binary packages</h3>
+	<h3 class="es"><a id="sec-bin" class="anchor" href="#sec-bin"><span class="octicon octicon-link"></span></a>Paquetes binarios</h3>
+	<h3 class="pt_BR"><a id="sec-bin" class="anchor" href="#sec-bin"><span class="octicon octicon-link"></span></a>Pacotes binários</h3>
+	<p class="en">Binary packages of <strong>kalendas</strong> are available for different platforms:</p>
+	<p class="es">Paquetes pre-compilados de <strong>kalendas</strong> están disponibles para varias plataformas:</p>
+	<p class="pt_BR">Pacotes pré-compilados de <strong>kalendas</strong> estão disponíveis para diferentes plataformas:</p>
+	<ul>
+	  <li><img class="alineadoTextoImagenCentro" src="images/freebsd.png" alt=""/>
+	    <p class="en"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-port">FreeBSD/GhostBSD</a>, using ports.</p>
+	    <p class="es"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-port">FreeBSD/GhostBSD</a>, usando ports.</p>
+	    <p class="pt_BR"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-port">FreeBSD/GhostBSD</a>, usando ports.</p>	    
+	  </li>
+	  <li><img class="alineadoTextoImagenCentro" src="images/linux.png" alt=""/>
+	    <p class="en">Linux, using package manager</p>
+	    <p class="es">Linux, usando gestor de paquetes</p>
+	    <p class="pt_BR">Linux, usando gestor de pacotes</p>
+	    <ul>
+	      <li>
+		<p class="en">based on Debian <a href="https://launchpad.net/~mymolina/+archive/ubuntu/kalendas-pkg">(Debian/Ubuntu)</a>.</p>
+		<p class="es">basadas en Debian <a href="https://launchpad.net/~mymolina/+archive/ubuntu/kalendas-pkg">(Debian/Ubuntu)</a>.</p>
+		<p class="pt_BR">baseados em Debian <a href="https://launchpad.net/~mymolina/+archive/ubuntu/kalendas-pkg">(Debian/Ubuntu)</a>.</p>
+	      </li>
+	      <li>
+		<p class="en">based on RHEL <a href="https://github.com/mikemolina/kalendas/wiki/RPM-based-packages">(Fedora/CentOS)</a>.</p>
+		<p class="es">basadas en RHEL <a href="https://github.com/mikemolina/kalendas/wiki/RPM-based-packages">(Fedora/CentOS)</a>.</p>
+		<p class="pt_BR">baseados em RHEL <a href="https://github.com/mikemolina/kalendas/wiki/RPM-based-packages">(Fedora/CentOS)</a>.</p>
+	      </li>
+	    </ul>
+	  </li>
+	  <li><img class="alineadoTextoImagenCentro" src="images/macosx.png" alt=""/>
+	    <p class="en"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-on-homebrew">Mac OS X</a>, with a Homebrew formula.</p>
+	    <p class="es"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-on-homebrew">Mac OS X</a>, con una fórmula de Homebrew.</p>
+	    <p class="pt_BR"><a href="https://github.com/mikemolina/kalendas/wiki/kalendas-on-homebrew">Mac OS X</a>, com uma fórmula de homebrew.</p>
+	  </li>
+	  <li><img class="alineadoTextoImagenCentro" src="images/windows.png" alt=""/>
+	    <p class="en"><a href="https://github.com/mikemolina/kalendas#win">Windows</a>, using a simple Makefile.</p>
+	    <p class="es"><a href="https://github.com/mikemolina/kalendas#win">Windows</a>, usando un simple Makefile.</p>
+	    <p class="pt_BR"><a href="https://github.com/mikemolina/kalendas#win">Windows</a>, usando um simples Makefile.</p>
+	  </li>
+	</ul>
+	<!-- end Paquetes binarios -->
+	<!-- Source code -->
+	<h3 class="en"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Source code</h3>
+	<h3 class="es"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código fuente</h3>
+	<h3 class="pt_BR"><a id="sec-sources" class="anchor" href="#sec-sources"><span class="octicon octicon-link"></span></a>Código fonte</h3>
+	<p class="en">Source code of stable version is available in <a href="https://launchpad.net/kalendas">Launchpad<img class="alineadoTextoImagenCentro" src="images/launchpad.png" alt=""/></a>. Version with the latest development is hosted in the repository <a href="https://github.com/mikemolina/kalendas">GitHub<img class="alineadoTextoImagenCentro" src="images/github.png" alt=""/></a>. You can access it with:</p>
+	<p class="es">Código fuente de la versión estable está disponible en <a href="https://launchpad.net/kalendas">Launchpad<img class="alineadoTextoImagenCentro" src="images/launchpad.png" alt=""/></a>. La versión con el último desarrollo está alojada en el repositorio <a href="https://github.com/mikemolina/kalendas">GitHub<img class="alineadoTextoImagenCentro" src="images/github.png" alt=""/></a>. Usted puede acceder a ella con:</p>
+	<p class="pt_BR">Código fonte do última versão estável estão disponíveis em <a href="https://launchpad.net/kalendas">Launchpad<img class="alineadoTextoImagenCentro" src="images/launchpad.png" alt=""/></a>. Os fonte da versão em desenvolvimento está hospedado no repositório <a href="https://github.com/mikemolina/kalendas">GitHub<img class="alineadoTextoImagenCentro" src="images/github.png" alt=""/></a>. Você pode aceder com:</p>
+	<pre><code>$ git clone https://github.com/mikemolina/kalendas.git</code></pre>
+	<!-- end Source code -->
+	<!-- end Descargas -->
+	<!-- Licencia -->
+	<h2 class="en"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">License</font></h2>
+	<h2 class="es"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">Licencia</font></h2>
+	<h2 class="pt_BR"><a id="sec-down" class="anchor" href="#sec-down"><span class="octicon octicon-link"></span></a><font color="#74B80D">Licença</font></h2>
+	<p class="en">This program is free software and is distributed under the terms of the GNU General Public License (GNU GPL version 3).</p>
+	<p class="es">Este programa es software libre y está distribuido conforme a los términos de la Licencia Pública General de GNU (GNU GPL versión 3).</p>
+	<p class="pt_BR">Este programa é software livre e você pode redistribuir lo conforme aos termos da Licença Pública General de GNU (GNU GPL versão 3).</p>
+	<!-- end Licencia -->
       </section><!-- end section -->
     </div><!-- end wrapper -->
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <div id="footer">
       <hr>
       <span class="credits left">
-	<NOBR class="en">Maintained by <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
-	<NOBR class="es">Gestionado por <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
-	<NOBR class="pt_BR">Gerenciado por <a href="https://github.com/mikemolina">mikemolina</a> 2014.</NOBR>
+	<NOBR class="en">Maintained by <a href="https://github.com/mikemolina">mikemolina</a> 2015.</NOBR>
+	<NOBR class="es">Gestionado por <a href="https://github.com/mikemolina">mikemolina</a> 2015.</NOBR>
+	<NOBR class="pt_BR">Gerenciado por <a href="https://github.com/mikemolina">mikemolina</a> 2015.</NOBR>
       </span>
       <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
     </div><!-- end footer -->    
