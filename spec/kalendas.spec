@@ -1,5 +1,5 @@
 Name:           kalendas
-Version:        1.2.0
+Version:        1.3.0
 Release:        1%{?dist}
 Summary:        Calculations of Calendar and Julian Date
 Summary(es):    Cálculos de Calendario y Fecha Juliana
@@ -70,10 +70,17 @@ fi
 %{_infodir}/*
 %{_datadir}/bash-completion/completions/kalendas
 
+%check
+make check
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Tue Dec 29 2015 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.0-1
+- Package updated to version 1.3.0.
+- URL updated.
+- Add tests performance.
 * Wed Jul 15 2015 Miguel Molina <mmolina.unphysics@gmail.com> - 1.2.0-1
 - Package updated to version 1.2.0.
 - URL updated.
