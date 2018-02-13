@@ -5,14 +5,14 @@ This website contains the repository of **kalendas**  for distros Linux based in
 
 Fedora
 ------
-**kalendas** packages are available in versions 22 and 23*. First install the repository for to setup dnf (before yum),
+**kalendas** packages are available in versions 25 and 27*. First install the repository for to setup dnf (before yum),
 from the terminal run
 
     $ sudo dnf install http://mikemolina.github.com/kalendas-rpm/kalendas-fedora-release-1.0-1.noarch.rpm
 you will now be able to install the RPM package 
 
     $ sudo dnf install kalendas
-*Note: Package for Fedora 21 unsupported by EOL in the OS.
+*Note: Package for Fedora 20, 21, 22 and 23 unsupported by EOL in the OS.
 
 CentOS
 ------
