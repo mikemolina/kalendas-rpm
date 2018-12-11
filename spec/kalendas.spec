@@ -1,5 +1,5 @@
 Name:           kalendas
-Version:        1.3.0
+Version:        1.3.1
 Release:        1%{?dist}
 Summary:        Calculations of Calendar and Julian Date
 Summary(es):    Cálculos de Calendario y Fecha Juliana
@@ -77,6 +77,9 @@ make check
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Mon Dec 10 2018 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-1
+- Package updated to version 1.3.1.
+- Maintenance corrections for package distribution.
 * Tue Dec 29 2015 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.0-1
 - Package updated to version 1.3.0.
 - URL updated.
