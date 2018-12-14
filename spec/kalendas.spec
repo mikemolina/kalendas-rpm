@@ -1,6 +1,6 @@
 Name:           kalendas
 Version:        1.3.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Calculations of Calendar and Julian Date
 Summary(es):    Cálculos de Calendario y Fecha Juliana
 Summary(pt_BR): Cálculos do Calendário e Data Juliana
@@ -12,7 +12,7 @@ Source:         https://launchpad.net/kalendas/trunk/%{version}/+download/%{name
 
 Requires(post): info
 Requires(preun): info
-BuildRequires:  texinfo >= 4.13a, gettext >= 0.17, perl-libintl >= 1.20, pkgconfig(bash-completion)
+BuildRequires:  gcc, texinfo >= 4.13a, gettext >= 0.17, perl-libintl >= 1.20, pkgconfig(bash-completion)
 Requires:       perl-libintl >= 1.20
 BuildArch:      noarch
 
@@ -77,6 +77,8 @@ make check
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Thu Dec 13 2018 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-2
+- Add build dependency referred to compiler C.
 * Mon Dec 10 2018 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-1
 - Package updated to version 1.3.1.
 - Maintenance corrections for package distribution.
