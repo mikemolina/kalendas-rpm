@@ -1,18 +1,21 @@
 Name:           kalendas
 Version:        1.3.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Calculations of Calendar and Julian Date
 Summary(es):    Cálculos de Calendario y Fecha Juliana
 Summary(pt_BR): Cálculos do Calendário e Data Juliana
-Group:          Applications/Engineering
 
 License:        GPLv3+
 URL:            http://mikemolina.github.io/kalendas-home
 Source:         https://launchpad.net/kalendas/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 
+BuildRequires:  gcc
+BuildRequires:  texinfo >= 4.13a
+BuildRequires:  gettext >= 0.17
+BuildRequires:  perl-libintl >= 1.20
+BuildRequires:  pkgconfig(bash-completion)
 Requires(post): info
 Requires(preun): info
-BuildRequires:  gcc, texinfo >= 4.13a, gettext >= 0.17, perl-libintl >= 1.20, pkgconfig(bash-completion)
 Requires:       perl-libintl >= 1.20
 BuildArch:      noarch
 
@@ -46,13 +49,11 @@ done
 
 %build
 %configure
-make %{?_smp_mflags}
+%make_build
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %make_install
 rm -f $RPM_BUILD_ROOT/%{_infodir}/dir
-%find_lang %{name}
 %find_lang %{name} --with-man
 
 %post
@@ -64,39 +65,46 @@ if [ $1 = 0 ] ; then
 fi
 
 %files -f %{name}.lang
-%doc README.md LEAME.md NEWS ChangeLog AUTHORS COPYING LICENCIA DEPENDENCIES
-%{_bindir}/*
-%{_mandir}/man1/*
-%{_infodir}/*
+%license COPYING LICENCIA
+%doc README.md LEAME.md NEWS ChangeLog AUTHORS DEPENDENCIES
+%{_bindir}/kalendas
+%{_mandir}/man1/kalendas.1.*
+%{_infodir}/kalendas.info.gz
 %{_datadir}/bash-completion/completions/kalendas
 
 %check
 make check
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
+* Sat Mar 2 2019 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-3
+- Spec file corrections, Red Hat Bugzilla bug 1325477.
+
 * Thu Dec 13 2018 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-2
 - Add build dependency referred to compiler C.
+
 * Mon Dec 10 2018 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.1-1
 - Package updated to version 1.3.1.
 - Maintenance corrections for package distribution.
+
 * Tue Dec 29 2015 Miguel Molina <mmolina.unphysics@gmail.com> - 1.3.0-1
 - Package updated to version 1.3.0.
 - URL updated.
 - Add tests performance.
+
 * Wed Jul 15 2015 Miguel Molina <mmolina.unphysics@gmail.com> - 1.2.0-1
 - Package updated to version 1.2.0.
 - URL updated.
 - Add dependency with bash-completion via pkg-config.
+
 * Tue Dec 30 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.1.0-1
 - Package updated to version 1.1.0.
 - Packaging for fedora 22.
+
 * Sat Oct 11 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.2-1
 - Package updated to version 1.0.2.
 - New direction web for distros based in RPM.
 - Spanish, portuguese translations in spec file fields.
+
 * Sun Sep 28 2014 Miguel Molina <mmolina.unphysics@gmail.com> - 1.0.1-1
 - Initial packaging.
 - Adjusted the package according to packaging guidelines.
